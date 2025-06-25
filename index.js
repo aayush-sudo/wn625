@@ -4,10 +4,10 @@ const {MongoClient} = require("mongodb");
 const { response } = require("express");
 require("dotenv").config();
 
-// const server = HTMLOutputElement.createServer((req,res) => {
-//     res.setHeader("Access-Control-Allow-Origin","*");
-//     let path = url.parse(req.url,true);
-// });
+const server = HTMLOutputElement.createServer((req,res) => {
+    res.setHeader("Access-Control-Allow-Origin","*");
+    let path = url.parse(req.url,true);
+});
 
 const app = express();
 app.use(express());
